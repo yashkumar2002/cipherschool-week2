@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Demo Page</h1>
+    <button onclick="onButton()">Click me</button>
+    <script>
+        //function onButton(){
+            
+            // let h1Element=document.queryElementByTagName("h1")[0];
+            // h1Element.innerText="This is Cipher"
+               
+        //     var btn=document.querySelector('button');
+        //     btn.addEventListener('click', function() {
+        //    // alert('Hello world');
+        //    document.getElementsByTagName("h1"[0].innerText="This is me")
+// }    }
+
+//this is real dome manipulation
+ 
+document.querySelector("#myDiv").addEventListener("click",function(){
+    console.log("div clicked me");
+})
+
+
+document.querySelector("button").addEventListener("click", function(e){
+    //e.preventdefault()  e.stopPropagation()
+    
+    console.log("Button clicked me");
+    document.getElementsByTagName("h1")[0].innerText="This is good"
+})
+                                                     //with e or without e
+     document.body.addEventListener("click", function(){
+        console.log("Body was clicked")
+     })
+
+
+                
+    </script>
+</body>
+</html>
